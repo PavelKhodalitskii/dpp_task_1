@@ -80,6 +80,7 @@ p {
   border-bottom-right-radius: 100px;
   background: linear-gradient(to bottom right, pink, blue);
   background-size: cover;
+  overflow: hidden;
 }
 
 .who_ami_text {
@@ -132,7 +133,7 @@ p {
   flex-direction: column;
 }
 
-.running_road_wrapper {
+.what_i_can_wrapper {
   width: 100%;
   height: 200px;
   display: flex;
@@ -140,23 +141,14 @@ p {
   overflow: hidden;
 }
 
-@keyframes running_road{
-  0% {
-      transform: translateX(0)
-  }
-  100% {
-      transform: translateX(-160%)
-  }
-}
-
-.running_road {
-  font-size: 50pt;
+.what_i_can {
+  margin: 0 auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, blue, pink);
+  font-size: calc(30pt + 5vw);
   text-align: center;
   text-transform: uppercase;
-  object-fit: contain;
-  padding-left: 100%;
-  animation: running_road 5s infinite linear;
-  white-space: nowrap;
 }
 
 .tech_stack {
@@ -172,14 +164,28 @@ p {
   margin: 20px;
   padding: 20px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: rgb(201, 201, 201);
-  box-shadow: 0 15px 0 #0e0e0e;
+  box-shadow: 0 10px 0 #0e0e0e;
   background-color: #222222;
   border-radius: 10px;
   max-width: 250px;
   max-height: 300px;
 }
+
+.tech_card:hover {
+  margin: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(201, 201, 201);
+  box-shadow: 0 10px 0 #0e0e0e;
+  background-color: #222222;
+  border-radius: 10px;
+  max-width: 290px;
+  max-height: 340px;
+}
+
 
 .tech_card img {
   max-height: 300px;
@@ -211,30 +217,58 @@ footer {
   justify-content: center;
 }
 
-footer h1 {
-  font-size: 40px;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: rgb(90, 90, 90);
+@media (max-width: 400px) {
+  footer h1 {
+    font-size: calc(12pt + 2vw);
+    margin-top: 10px;
+    margin-left: 20px;
+    color: rgb(90, 90, 90);
+  }
+  
+  footer h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+  }
+  
+  footer p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(90, 90, 90);
+  }
+  
+  footer a {
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+  }
 }
 
-footer h2 {
-  font-size: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: rgb(90, 90, 90);
-}
+@media (min-width: 401px) {
+  footer h1 {
+    font-size: calc(12pt + 2vw);
+    margin-top: 10px;
+    margin-left: 50px;
+    color: rgb(90, 90, 90);
+  }
 
-footer p {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: rgb(90, 90, 90);
-}
+  footer h2 {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+  }
 
-footer a {
-  font-size: 30px;
-  margin-left: 10px;
-  color: rgb(90, 90, 90);
-}
+  footer p {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgb(90, 90, 90);
+  }
 
+  footer a {
+    font-size: 30px;
+    color: rgb(90, 90, 90);
+  }
+}
