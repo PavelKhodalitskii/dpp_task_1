@@ -8,11 +8,28 @@ body {
 }
 
 h1 {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 30pt;
+  color: white;
+  text-align: center;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15pt;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20pt;
+  color: rgb(228, 228, 228);
+  text-align: center;
 }
 
 p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -66,10 +83,10 @@ p {
 }
 
 .who_ami_text {
+  user-select: none;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #181818;
-  font-size: calc(30pt + 27vw);
+  font-size: calc(30pt + 25vw);
 }
 
 .workplace_container {
@@ -86,11 +103,9 @@ p {
   justify-content: space-around;
 }
 
-
 .logo_wrapper {
   width: 30%;
-  height: calc(width);
-  box-shadow: 0, 15, 20, linear-gradient(to bottom right, pink, blue);
+  height: auto;
 }
 
 .inrtu_logo {
@@ -101,9 +116,6 @@ p {
 }
 
 .workplace_text {
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #ffffff;
   font-size: calc(30pt + 1vw);
 }
 
@@ -153,15 +165,76 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 500px;
+  height: auto;
 }
 
 .tech_card {
   margin: 20px;
+  padding: 20px;
   border-style: solid;
   border-width: 2px;
-  border-color: blue;
+  border-color: rgb(201, 201, 201);
+  box-shadow: 0 15px 0 #0e0e0e;
+  background-color: #222222;
   border-radius: 10px;
   max-width: 250px;
   max-height: 300px;
 }
+
+.tech_card img {
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.tech_card p {
+  padding-top: 20px;
+}
+
+.footer_top_border {
+  margin-top: 200px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, blue, pink);
+}
+
+footer {
+  width: 100%;
+  background-color: #222222;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+footer h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(90, 90, 90);
+}
+
+footer h2 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(90, 90, 90);
+}
+
+footer p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(90, 90, 90);
+}
+
+footer a {
+  font-size: 30px;
+  margin-left: 10px;
+  color: rgb(90, 90, 90);
+}
+
