@@ -47,6 +47,30 @@ p {
   border-bottom-right-radius: 30px;
 }
 
+.profile_titles {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_titles h1 {
+  font-size: calc(20pt + 2vw);
+}
+
+.profile_titles h2 {
+  margin-top: 10px;
+  font-size: calc(14pt + 1vw);
+}
+
+.profile_titles a {
+  font-size: calc(10pt + 1vw);
+  margin-top: 10px;
+}
+
 .background_img_container {
   position: absolute;
   width: 100%;
@@ -120,14 +144,6 @@ p {
   font-size: calc(30pt + 1vw);
 }
 
-.profile_titles {
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  color: rgb(236, 236, 236);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .work_stack {
   display: flex;
   flex-direction: column;
@@ -163,7 +179,6 @@ p {
 .tech_card {
   margin: 20px;
   padding: 20px;
-  border-style: solid;
   border-width: 1px;
   border-color: rgb(201, 201, 201);
   box-shadow: 0 10px 0 #0e0e0e;
